@@ -39,6 +39,49 @@ console.log(defi);
 console.log(defi.length);
 console.log(defi.toUpperCase());
 console.log(defi.toLowerCase());
-
+//-----------------------------------------------------------------------------------------------------------------
 console.log(defi.substr(0, 8));
 console.log(defi.substring(0, 8));
+//-----------------------------------------------------------------------------------------------------------------
+let text = "10 jours en JavaScript";
+let text1 = text.substring(3);
+let text2 = text1.substring(0, 1).toUpperCase() + text1.substring(1);
+// let text2 = text1.slice(0, 1).toUpperCase() + text1.substring(1);
+console.log(text2);
+//-----------------------------------------------------------------------------------------------------------------
+console.log(text2.includes("Script"));
+//-----------------------------------------------------------------------------------------------------------------
+console.log("string".split(""));
+console.log(text.split(" "));
+let tableau = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+console.log(tableau.split(","));
+//-----------------------------------------------------------------------------------------------------------------
+console.log(text.replace("JavaScript", "PHP"));
+//-----------------------------------------------------------------------------------------------------------------
+console.log(text.charAt(15), "est le caractere à l'index 15");
+console.log(text.charCodeAt(12), "code de caractere de J");
+console.log(text.indexOf("a"), "position du premier a");
+console.log(text.lastIndexOf("a"), "position du dernier a");
+//-----------------------------------------------------------------------------------------------------------------
+let phrase =
+  "Vous ne pouvez pas terminer une phrase avec parceque parceque c'est une conjonction";
+console.log(
+  phrase.indexOf("parceque"),
+  "position de la premiere occurrence de parceque avec la methode indexof"
+);
+console.log(
+  phrase.lastIndexOf("parceque"),
+  "position de la derniere occurrence de parceque"
+);
+console.log(
+  phrase.search("parceque"),
+  "position de la premiere occurrence de parceque avec la methode search"
+);
+//-----------------------------------------------------------------------------------------------------------------
+console.log(" 10 Jours en JavaScript ".trim());
+console.log(
+  text.endsWith("t"),
+  "verifie si la chaine de caracteres se termine par la chaine de caracteres fournie en argument"
+);
+const regex = /["a"]/g;
+console.log(text.match(regex));
