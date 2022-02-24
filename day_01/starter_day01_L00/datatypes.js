@@ -92,7 +92,7 @@ console.log(
 console.log("10 Jours en ".concat("JavaScript"));
 console.log(text.repeat(2));
 
-//---------------------------------------------------//////--------------------------------------------------------------//
+//---------------------------------------------------Data Type --> Level02-----------------------------------------------------------//
 
 let declaration =
   "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.";
@@ -100,4 +100,99 @@ console.log(declaration);
 let citation =
   "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.";
 console.log(citation);
-console.log();
+//-----------------------------------------------------------------------------------------------------------------
+console.log(
+  typeof "10" === typeof 10,
+  "Verifiez si `typeof '10'` est exactement egal à `typeof 10`. Sinon, rendez-le exactement égal."
+);
+console.log(
+  parseFloat("9.8") === 10,
+  "Verifiez si `parseFloat('9.8')` est exactement egal à 10. Sinon, rendez-le exactement égal."
+);
+
+console.log(parseFloat("9.8") + 0.2 === 10);
+//-----------------------------------------------------------------------------------------------------------------
+console.log(
+  "python,jargon".includes("on"),
+  "Verifiez si 'on' se trouve  à la fois dans 'python' et 'jargon'"
+);
+console.log(
+  "I hope this course is not full of jargon".includes("on"),
+  "Verifiez si `jargon` est dans la chaine."
+);
+//-----------------------------------------------------------------------------------------------------------------
+console.log(
+  Math.random() * (100 - 0),
+  "Generer un nombre aleatoire entre 0 et 100 inclusivement."
+);
+console.log(
+  Math.floor(Math.random() * (100 - 0 + 1)) + 0,
+  "Generer un nombre ENTIER aleatoire entre 0 et 100 inclusivement."
+);
+console.log(
+  Math.floor(Math.random() * (50 - 0 + 1)) + 0,
+  "Generer un nombre ENTIER aleatoire entre 0 et 50 inclusivement."
+);
+console.log(
+  Math.floor(Math.random() * (255 - 0 + 1)) + 0,
+  "Generer un nombre ENTIER aleatoire entre 0 et 255 inclusivement."
+);
+//-----------------------------------------------------------------------------------------------------------------
+console.log(
+  "You cannot end a sentence with because because because is a conjunction".substr(
+    30,
+    24
+  )
+  // "Utilisez la méthode `substr()` pour extraire la chaine de caractère 'because because because' de la phrase suivante: 'You cannot end a sentence with because because because is a conjunction'"
+);
+
+//---------------------------------------------------Boolean & Dates --> Level01----------------------------------------------------------//
+
+{
+  let firstName = "Thomas";
+  let lastName = "ARMOUGOM";
+  let country = "Reunion";
+  let city = "St-Denis";
+  let age = 35;
+  let isMarried = "non";
+  let year = 2022;
+  console.log(typeof firstName);
+  console.log(typeof lastName);
+  console.log(typeof country);
+  console.log(typeof city);
+  console.log(typeof age);
+  console.log(typeof isMarried);
+  console.log(typeof year);
+}
+console.log("10" === 10);
+console.log(parseInt("9.8", 10));
+console.log(
+  "Ecrivez trois declarations JavaScript qui fournissent une valeur de verite (True)."
+);
+console.log("10" === "10");
+console.log("un" === "un");
+console.log(5 === 5);
+console.log(
+  "Ecrivez trois declarations JavaScript qui fournissent une valeur erronée (False)."
+);
+console.log("10" === 10);
+console.log("un" === "deux");
+console.log(5 === 6);
+//-----------------------------------------------------------------------------------------------------------------
+console.log("Determinez le resultat des expressions suivantes");
+console.log(4 > 3);
+console.log(4 >= 3);
+console.log(4 < 3);
+console.log(4 <= 3);
+console.log(4 == 4);
+console.log(4 === 4);
+console.log(4 != 4);
+console.log(4 !== 4);
+console.log(4 != "4");
+console.log(4 == "4");
+console.log(4 === "4");
+console.log(
+  "Trouvez la longueur 'length' de *python* et du *jargon* et faites une fausse declaration de comparaison."
+);
+console.log("python".length + "jargon".length);
+console.log("python".length + "jargon".length === 13);
